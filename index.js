@@ -82,6 +82,4 @@ client.connect(err => {
 });
 
 
-app.listen(port, () => {
-  console.log(`Server is  listening from :${port}`)
-})
+app.listen(process.env.PORT || port)
